@@ -1,4 +1,4 @@
-.mainImage{
+.mainImage {
     width: 100%;
     height: auto;
     display: block;
@@ -14,20 +14,42 @@
 
 .overlay-text {
     position: absolute;
-    top: 50%; /* Adjust as needed to vertically center the text */
-    left: 70%; /* Center the text horizontally */
-    transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
+    top: 50%;
+    /* Adjust as needed to vertically center the text */
+    left: 70%;
+    /* Center the text horizontally */
+    transform: translate(-50%, -50%);
+    /* Center the text both horizontally and vertically */
     position: fixed;
     color: white;
+    text-align: center;
     font-size: 150px;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow for better visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Add a shadow for better visibility */
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .content {
-    position: absolute;
-    margin-top: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     background-color: white;
-    left: 0;
+    z-index: 2;
+    width: 85%;
+    margin: 0 auto;
+    /* Center the content horizontally */
+    box-sizing: border-box;
+    /* This ensures that the info for the page start below the page until the user starts scrolling*/
+    margin-top: 100vh;
+}
+
+.contentText{
+    padding: 25px;
 }
 
 ul {
@@ -35,24 +57,20 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:  #4f7942;
-    position: -webkit-sticky; /* Safari */
+    background-color: #4f7942;
+    position: -webkit-sticky;
     position: sticky;
-    top: 100;
-    width:100%;
+    top: 0;
+    width: 100%;
+    height: 100px;
     display: flex;
     z-index: 2;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    padding-bottom: 10px;
-    height: 100px;
+    align-items: center;
+    justify-content: center;
 }
 
 li {
-    float: left;
     border-right: 1px solid #bbb;
-    vertical-align: middle;
-    top: 0;
 }
 
 li:last-child {
@@ -66,12 +84,14 @@ li a {
     padding: 10px 16px;
     text-decoration: none;
     font-size: 20pt;
-    bottom: 0;
-
 }
 
 li a:hover {
     background-color: rgb(91, 90, 90);
+}
+.active {
+    text-transform: uppercase;
+    text-decoration-line: underline;
 }
 
 
@@ -84,6 +104,6 @@ li a:hover {
     color: white;
     text-align: center;
     font-size: 10pt;
-    position: relative ;
+    position: relative;
     z-index: 100;
-  }
+}

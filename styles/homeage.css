@@ -1,0 +1,60 @@
+
+    /* Define styles for the row bio */
+    .row.bio {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+      }
+  
+      /* Define styles for the column container */
+      .col-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+      }
+  
+      /* Define styles for individual columns */
+      .col {
+        flex: 1;
+        background-color: #f0f0f0;
+        margin: 10px;
+        padding: 20px;
+        width: 20%;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .portrait{
+        width: 40%;
+        margin: 15px;
+      }
+      /* Style the image container */
+      .img-container {
+        max-width: 300px;
+        /* Adjust the image container width as needed */
+        margin-right: 20px;
+        /* Add spacing between the image and text columns */
+        text-align: center;
+        /* Center the content (image) within the container */
+      }
+  
+      /* Style the course columns */
+      .course-column {
+        flex: 1;
+      }
+  
+      /* Style headings */
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+  
+      h3 {
+        font-size: 18px;
+        margin: 5px 0;
+      }
+  
+      /* Style the passions and closing paragraphs */
+      p {
+        margin-top: 10px;
+      }
+  
