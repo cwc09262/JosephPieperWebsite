@@ -1,0 +1,89 @@
+.mainImage{
+    width: 100%;
+    height: auto;
+    display: block;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+.overlay-container {
+    position: relative;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%; /* Adjust as needed to vertically center the text */
+    left: 70%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
+    position: fixed;
+    color: white;
+    font-size: 150px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow for better visibility */
+}
+.content {
+    position: absolute;
+    margin-top: 100vh;
+    background-color: white;
+    left: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:  #4f7942;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 100;
+    width:100%;
+    display: flex;
+    z-index: 2;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    padding-bottom: 10px;
+    height: 100px;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+    vertical-align: middle;
+    top: 0;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 20pt;
+    bottom: 0;
+
+}
+
+li a:hover {
+    background-color: rgb(91, 90, 90);
+}
+
+
+.footer {
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgb(91, 90, 90);
+    color: white;
+    text-align: center;
+    font-size: 10pt;
+    position: relative ;
+    z-index: 100;
+  }
