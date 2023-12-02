@@ -31,7 +31,7 @@
 
 .scrollIndicator {
     position: fixed;
-    top: 90vh;
+    top: 85vh;
     left: 40%;
     /* Center the text both horizontally and vertically */
     color: white;
@@ -59,6 +59,7 @@ body {
     box-sizing: border-box;
     /* This ensures that the info for the page start below the page until the user starts scrolling*/
     margin-top: 100vh;
+    margin-bottom: 30px;
 }
 
 .contentText {
