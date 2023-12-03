@@ -1,79 +1,81 @@
 body {
-  text-align: center; /* Center the content within the body */
-}
-
-div.gallery{ 
-  margin; auto;
-  width; 100%;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-div.gallery img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 15px;
-  width: auto;
-  height: 200px;
-  border-radius: 3px 3px;
-}
-
-
-div.desc {
-  padding-top: 15px;
-  text-align: center;
-  font-size: 13pt;
-  font-family: "American Typewriter", serif;
-  font-weight: bold;
-}
-
-div.date{
-  padding-top: 5px;
-  font-size: 11pt;
-}
-
-div.cite{
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-size: 9pt;
-}
-
-
-
-/* This is the row */
-.responsive {
-  padding: 0 10px;
-  float: none; /* Remove the float property */
-  height: 300px;
-  display: inline-block; /* Use inline-block to keep elements in a row */
-  margin: auto; /* Adjust margin for spacing between elements */
-}
-
-.row1{
-  width: 30%;
-  padding-bottom: 100px;
-}
-
-.row2{
-  width: 20%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
+    text-align: center; /* Center the content within the body */
   }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-      width: auto;
+  
+  div.gallery{ 
+    margin; auto;
+    width; 100%;
   }
-}
-
-.clearfix:after {
-  content:
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+    background-color: rgb(240, 236, 227);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  div.gallery img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    width: auto;
+    height: 200px;
+    border-radius: 3px 3px;
+  }
+  
+  
+  div.desc {
+    padding-top: 15px;
+    text-align: center;
+    font-size: 13pt;
+    font-family: "American Typewriter", serif;
+    font-weight: bold;
+  }
+  
+  div.date{
+    padding-top: 5px;
+    font-size: 11pt;
+  }
+  
+  div.cite{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 9pt;
+  }
+  
+  
+  
+  /* This is the row */
+  .responsive {
+    padding: 0 10px;
+    float: none; /* Remove the float property */
+    height: 300px;
+    display: inline-block; /* Use inline-block to keep elements in a row */
+    margin: auto; /* Adjust margin for spacing between elements */
+  }
+  
+  .row1{
+    width: 30%;
+    padding-bottom: 100px;
+  }
+  
+  .row2{
+    width: 20%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+        width: auto;
+    }
+  }
+  
+  .clearfix:after {
+    content:
+  }

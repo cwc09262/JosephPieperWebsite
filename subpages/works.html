@@ -40,7 +40,7 @@
 
 
             <!-- The four columns -->
-            <div class="row">
+            <div class="row" style="margin: auto;">
                 <div class="column">
                     <img src="/images/books/onlytheloversings.jpeg" alt="Only the Lover Sings" style="width:100%"
                         onclick="myFunction(this);">
@@ -50,20 +50,32 @@
                         onclick="myFunction(this);">
                 </div>
                 <div class="column">
-                    <img src="/images/books/onlytheloversings.jpeg" alt="Only the Lover Sings" style="width:100%"
+                    <img src="/images/books/faith_hope_love.png" alt="Faith Hope Love" style="width:100%"
                         onclick="myFunction(this);">
                 </div>
                 <div class="column">
-                    <img src="/images/books/anthology.jpeg" alt="Anthology" style="width:100%"
+                    <img src="/images/books/forloveofwisdom.jpeg" alt="forloveofwisdom" style="width:100%"
+                        onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="/images/books/the4vitues.jpeg" alt="the4CardinalVirtues" style="width:100%"
+                        onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="/images/books/hall&contemplation.jpeg" alt="happy&contemplate" style="width:100%"
+                        onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="/images/books/forloveofwisdom.jpeg" alt="forloveofwisdom" style="width:100%"
                         onclick="myFunction(this);">
                 </div>
 
 
         </div>
             <div class="container">
-                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;X</span>
+                <img id="expandedImg">
                 <div id="imgtext"></div>
-                <img id="expandedImg" style="width: 300%;">
             </div>
 
 
@@ -75,14 +87,30 @@
         var bookInfo = {
             "Only the Lover Sings": {
                 "title": "Only the Lover Sings",
-                "description": "This is a description for Only the Lover Sings. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                "description": "The popular and highly regarded Pieper speaks of the necessity for human persons to be able to contemplate and appreciate beauty to develop their full humanity. Pieper expresses succinctly that the foundation of the human person in society is leisure, free time in which one can contemplate, be receptive to being and its beauty."
                 // Add more fields as needed
             },
             "Anthology": {
                 "title": "Anthology",
-                "description": "This is a description for Anthology. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                "description": "Near the end of a long career as one of the most widely read popular Thomistic philosophers of the twentieth century, Josef Pieper has himself compiled an anthology from all his works. He has selected the best and most representative passages and arranged them in an order that gives sense to the whole and aids in the understanding of each excerpt."
                 // Add more fields as needed
             },
+            "Faith Hope Love": {
+                "title": "Faith Hope Love",
+                "description": "This volume, three separate books in one edition, is a collection of Josef Pieper's famous treatises on the three theological virtues of Faith, Hope, and Love. Each of these treatises was originally published as a separate work over a period of thirty-seven years, and here they are brought together in English for the first time."
+            }, 
+            "forloveofwisdom": {
+                "title": "For the Love of Wisdom",
+                "description": "In concise essays, Josef Pieper champions philosophy as the pursuit of wisdom grounded in wonder, gratitude, and love. He argues that genuine philosophy is accessible to all and involves a profound engagement with the realities of life."
+            }, 
+            "the4CardinalVirtues": {
+                "title": "The Four Cardinal Virtues",
+                "description": "In The Four Cardinal Virtues, Joseph Pieper delivers a stimulating quartet of essays on the four cardinal virtues. He demonstrates the unsound overvaluation of moderation that has made contemporary morality a hollow convention and points out the true significance of the Christian virtues."
+            }, 
+            "happy&contemplate": {
+                "title":"Happiness & Contemplation", 
+                "description": "In offering this proposition of Thomas Aquinas to our thought, Josef Pieper uses traditional wisdom in order to throw light on present-day reality and present-day psychological problems. What, in fact, does one pursue in pursuing happiness? What, in the consensus of the wisdom of the early Greeks, of Plato and Aristotle, of the New Testament, of Augustine and Aquinas, is that condition of perfect bliss toward which all life and effort tend by nature?"
+            }
             // Add more books with their information
         };
 
@@ -95,8 +123,8 @@
             if (bookInfo.hasOwnProperty(title)) {
                 expandImg.src = img.src;
                 bookTitle = bookInfo[title].title
-                imgText.innerHTML = `<div class="bookInfo">
-                <h1 class="bookInfo">${bookInfo[title].title}</h1> <br>
+                imgText.innerHTML = `<div>
+                <h1>${bookInfo[title].title}</h1> <br>
                 ${bookInfo[title].description}
             </div>`;
                 expandImg.parentElement.style.display = "flex";

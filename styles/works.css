@@ -1,76 +1,65 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: Arial;
-  }
-  
-  /* The grid: Four equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 25%;
-    padding: 10px;
-  }
-  
-  /* Style the images inside the grid */
-  .column img {
-    opacity: 0.8; 
-    cursor: pointer; 
-  }
-  
-  .column img:hover {
-    opacity: 1;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* The expanding image container */
-  .container {
-    position: relative;
-    display: none;
-  }
-  
-  /* Expanding image text */
-  #imgtext {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: white;
-    font-size: 20px;
-  }
-  
-  /* Closable button inside the expanded image */
-  .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: black;
-    font-size: 35px;
-    cursor: pointer;
-  }
 
-
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 800px; /* Set a maximum width to control the layout */
-    margin: 0 auto; /* Center the container */
+.contentText {
+  text-align: center;
+  margin: 20px; /* Adjust as needed */
 }
 
+/* Center the row of columns */
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: rgb(240, 236, 227);
+  margin-bottom: 100px;
+}
+.column{
+  padding: 10px;
+  width: 10%;
+  opacity: 0.6;
+}
+
+.column:hover{
+  opacity: 1;
+  border: 2px black;
+  box-shadow: 0 8px 16px rgba(0, 0, 0);
+}
+
+/* Center the container with the expanded image and text */
+/* The expanding image container */
+.container {
+  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px; /* Set a maximum width to control the layout */
+  margin: auto; /* Center the container */
+  padding-top: 20px;
+}
+
+/* Center the close button */
+.closebtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+  
+}
+
+/* Center the expanded image */
 #expandedImg {
-    max-width: 60%; /* Adjust the width of the expanded image */
+  height: 500px;
+  opacity: 1;
+  border: 2px black;
+  box-shadow: 0 8px 16px rgba(0, 0, 0);
 }
 
-.bookInfo {
-    color: black;
-    float: right;
-    justify-content: center;
+/* Center the image text */
+#imgtext {
+  text-align: left;
+  color: black;
+  margin-top: 20px; /* Adjust as needed */
+  padding: 40px;
 }
