@@ -26,13 +26,13 @@
         <!-- Navigation bar -->
         <ul>
             <li><a href="/index.html">Home</a></li>
-            <li><a class="active" href="/subpages/projects.html">Works</a></li>
+            <li><a class="active" href="/subpages/works.html">Works</a></li>
             <li><a href="/subpages/painting.html">Paintings</a></li>
         </ul>
 
         <div class="contentText">
             <!-- Content specific to the Projects subpage -->
-            <h1>Our Projects</h1>
+            <h1>Works by Josef Peiper</h1>
 
             <p>Here you can find information about our latest projects. Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit.</p>
@@ -65,11 +65,6 @@
                     <img src="/images/books/hall&contemplation.jpeg" alt="happy&contemplate" style="width:100%"
                         onclick="myFunction(this);">
                 </div>
-                <div class="column">
-                    <img src="/images/books/forloveofwisdom.jpeg" alt="forloveofwisdom" style="width:100%"
-                        onclick="myFunction(this);">
-                </div>
-
 
         </div>
             <div class="container">
@@ -125,7 +120,7 @@
                 bookTitle = bookInfo[title].title
                 imgText.innerHTML = `<div>
                 <h1>${bookInfo[title].title}</h1> <br>
-                ${bookInfo[title].description}
+                <h3>${bookInfo[title].description}</h3>
             </div>`;
                 expandImg.parentElement.style.display = "flex";
             } else {
